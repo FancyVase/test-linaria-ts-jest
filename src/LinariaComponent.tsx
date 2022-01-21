@@ -5,4 +5,4 @@ const Wrapper = styled.div`
   background-color: pink;
 `;
 
-export const LinariaComponent = () => <Wrapper data-testid="linaria" />;
+export const LinariaComponent = () => <Wrapper className="linaria" data-testid="linaria" />;

@@ -7,6 +7,9 @@ import {LinariaComponent} from './LinariaComponent';
 describe('LinariaComponent', () => {
   it('renders', () => {
     const {getByTestId} = render(<LinariaComponent />);
-    expect(getByTestId('linaria')).toBeInTheDocument();
+    const component = getByTestId('linaria');
+
+    expect(component).toBeInTheDocument();
+    expect(component).toHaveClass('linaria');
   });
 });

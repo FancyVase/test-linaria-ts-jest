@@ -2,7 +2,8 @@ module.exports = {
   moduleDirectories: ['node_modules'],
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   preset: 'ts-jest',
-  // testEnvironment: 'jsdom',
+  testEnvironment: 'jsdom',
+  // setupFiles: ['./setupTests.js'],
   testMatch: ['<rootDir>/**/*.test.ts?(x)'],
   testPathIgnorePatterns: ['/node_modules/'],
   transform: {
